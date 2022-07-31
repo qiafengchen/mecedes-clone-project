@@ -1,0 +1,41 @@
+.NavigationItems {
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 100%;
+}
+
+.secondaryListItems {
+  width: 20rem;
+  display: flex;
+  margin: 2.5rem 0rem auto 20rem;
+  list-style: none;
+}
+
+.secondary {
+  cursor: pointer;
+  margin: 10px 2rem 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+
+.secondary:hover {
+  color: #40a4c8;
+}
+
+.finder::before {
+  content: '▼';
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.account::before {
+  content: '⬤';
+  margin-right: 5px;
+  font-size: 1.4rem;
+}

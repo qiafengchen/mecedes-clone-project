@@ -1,0 +1,27 @@
+.NavigationItem {
+  margin: 10px 2rem;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.NavigationItem a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 2em fantasy;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: #40a4c8;
+  border-bottom: 2px solid #40a4c8;
+}

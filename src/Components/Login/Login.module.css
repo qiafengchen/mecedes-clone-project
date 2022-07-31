@@ -1,0 +1,105 @@
+.titlebar {
+  width: 100%;
+  height: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 45px;
+  color: #fff;
+  justify-content: center;
+  background-color: #000;
+}
+
+.title {
+  margin-top: 1rem;
+}
+.id {
+  font: 2em monospace;
+}
+
+.tooltip {
+  padding-left: 1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tooltip::before,
+.tooltip::after {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip::before {
+  content: 'The Mercedes me ID provides you with central access to our services as well as to your integrated profile where you can modify your own data.';
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.tooltip::after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: ' ';
+  font-size: 0;
+  line-height: 0;
+}
+
+.tooltip:hover:before,
+.tooltip:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+input {
+  margin-top: 1rem;
+  padding: 0.5rem 5rem;
+  text-align: center;
+}
+.submitButton,
+.signupButton {
+  display: block;
+  margin: 2rem 2rem 0;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.submitButton {
+  background-color: #3887c1;
+  color: white;
+}
+
+.submitButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.signupButton {
+  display: inline-block;
+  background-color: white;
+  color: #3887c1;
+}
+
+.signupButton:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
