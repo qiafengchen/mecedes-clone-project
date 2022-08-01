@@ -86,8 +86,14 @@ input {
 }
 
 .submitButton {
+  border: 2px solid #3887c1;
   background-color: #3887c1;
   color: white;
+}
+.submitButton:active {
+  border: 2px solid #3887c1;
+  background-color: white;
+  color: #3887c1;
 }
 
 .submitButton:hover {
@@ -95,9 +101,15 @@ input {
 }
 
 .signupButton {
+  border: none;
   display: inline-block;
   background-color: white;
   color: #3887c1;
+}
+.signupButton:active {
+  display: inline-block;
+  background-color: rgba(3, 102, 214, 0.3);
+  color: white;
 }
 
 .signupButton:hover {

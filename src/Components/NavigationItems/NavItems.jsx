@@ -6,7 +6,7 @@ import NavigationItem from './NavItem/NavItem';
 
 const NavigationItems = (props) => {
   const [showLogin, setShowLogin] = React.useState(false);
-  console.log(showLogin);
+
   const showLoginModal = () => {
     setShowLogin((prev) => !prev);
   };
