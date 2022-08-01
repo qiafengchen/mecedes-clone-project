@@ -71,15 +71,12 @@ const Login = () => {
           <button className={classes.submitButton}>
             {isLogin ? 'SIGN IN' : `CREATE ACCOUNT`}
           </button>
-          <button
-            className={classes.signupButton}
-            onClick={switchAuthModeHandler}
-          >
-            {isLogin ? 'SWITCH TO SIGNUP' : `SWITCH TO LOGIN`}
-          </button>
         </div>
       </form>
       {error}
+      <button className={classes.signupButton} onClick={switchAuthModeHandler}>
+        {isLogin ? 'SWITCH TO SIGNUP' : `SWITCH TO LOGIN`}
+      </button>
     </div>
   );
 };
